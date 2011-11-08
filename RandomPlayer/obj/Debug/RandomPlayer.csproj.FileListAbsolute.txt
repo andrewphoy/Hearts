@@ -1,0 +1,5 @@
+C:\Documents and Settings\ahoy\Desktop\Local Code\Hearts\RandomPlayer\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\ahoy\Desktop\Local Code\Hearts\bin\RandomPlayer.dll
+C:\Documents and Settings\ahoy\Desktop\Local Code\Hearts\bin\RandomPlayer.pdb
+C:\Documents and Settings\ahoy\Desktop\Local Code\Hearts\RandomPlayer\obj\Debug\RandomPlayer.dll
+C:\Documents and Settings\ahoy\Desktop\Local Code\Hearts\RandomPlayer\obj\Debug\RandomPlayer.pdb

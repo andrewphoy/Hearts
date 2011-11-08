@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B1E703E7-9935-4413-A4EC-87FD4AE42FEC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cards</RootNamespace>
+    <AssemblyName>Cards</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Card.cs" />
+    <Compile Include="Deck.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="Hand.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\jr.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\2C.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\2D.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\2H.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\2S.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\3C.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\3D.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\3H.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\3S.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\4C.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\4D.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\4H.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\4S.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\5C.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\5D.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\5H.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\5S.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\6C.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\6D.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\6H.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\6S.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\7C.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\7D.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\7H.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\7S.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\8C.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\8D.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\8H.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\8S.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\9C.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\9D.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\9H.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\9S.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\10C.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\10D.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\10H.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\10S.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\11C.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\11D.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\11H.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\11S.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\12C.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\12D.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\12H.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\12S.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\13C.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\13D.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\13H.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\13S.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\14C.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\14D.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\14H.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\14S.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\b1fh.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\b1fv.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\b1pb.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\b1pl.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\b1pr.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\b1pt.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\b2fh.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\b2fv.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\b2pb.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\b2pl.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\b2pr.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\b2pt.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\ec.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CardImg\jb.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

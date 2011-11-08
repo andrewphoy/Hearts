@@ -1,0 +1,7 @@
+C:\Documents and Settings\ahoy\Desktop\Local Code\Hearts\HeartsInterfaces\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\ahoy\Desktop\Local Code\Hearts\HeartsInterfaces\bin\Debug\HeartsInterfaces.dll
+C:\Documents and Settings\ahoy\Desktop\Local Code\Hearts\HeartsInterfaces\bin\Debug\HeartsInterfaces.pdb
+C:\Documents and Settings\ahoy\Desktop\Local Code\Hearts\HeartsInterfaces\bin\Debug\Cards.dll
+C:\Documents and Settings\ahoy\Desktop\Local Code\Hearts\HeartsInterfaces\bin\Debug\Cards.pdb
+C:\Documents and Settings\ahoy\Desktop\Local Code\Hearts\HeartsInterfaces\obj\Debug\HeartsInterfaces.dll
+C:\Documents and Settings\ahoy\Desktop\Local Code\Hearts\HeartsInterfaces\obj\Debug\HeartsInterfaces.pdb
