@@ -18,17 +18,17 @@ namespace HeartsGame {
         private List<PlayerController> myPlayers;
         private int[] myScores;
         private int[] myPlaces;
-        private int myNumRounds;
+        private int myRoundNumber;
         private System.Threading.Thread myMasterThread;
 
         [ImportMany]
-        private Lazy<IHeartsPlayer, IHeartsPlayerData>[] AvailablePlayers { get; set; }
+        private Lazy<IHeartsPlayer, IHeartsPlayerData>[] myAvailablePlayers { get; set; }
         private CompositionContainer container;
 
         public HeartsGame() {
             myIsGameStarted = false;
             myPlayers = new List<PlayerController>();
-            myNumRounds = 0;
+            myRoundNumber = 0;
 
             ComposePlayers();
         }
@@ -48,6 +48,14 @@ namespace HeartsGame {
             get { return (from p in myPlayers select p.Player).ToArray(); }
         }
 
+        public string[] AvailablePlayers {
+            get {
+                var result = from p in myAvailablePlayers
+                             select p.Metadata.PlayerName;
+                return result.ToArray();
+            }
+        }
+
         internal List<PlayerController> PlayerControllers {
             get { return myPlayers; }
         }
@@ -62,7 +70,7 @@ namespace HeartsGame {
         }
 
         public int RoundNumber {
-            get { return myNumRounds; }
+            get { return myRoundNumber; }
         }
 
         public int[] Scores {
@@ -77,7 +85,7 @@ namespace HeartsGame {
             if (!myIsGameStarted) {
                 try {
                     // create the Player
-                    foreach (var player in AvailablePlayers) {
+                    foreach (var player in myAvailablePlayers) {
                         if (player.Metadata.PlayerName.Equals(playerName, StringComparison.OrdinalIgnoreCase)) {
                             // create the PlayerController
                             lock (myPlayersLock) {
@@ -112,7 +120,7 @@ namespace HeartsGame {
 
             myIsGameStarted = true;
             string[] names = this.PlayerNames;
-            myPlayers.ForEach(p => p.GameStarting(names));
+            myPlayers.ForEach(p => p.NewGame(names));
             DoLoop();
         }
 
@@ -129,9 +137,9 @@ namespace HeartsGame {
 
         private void DoLoop() {
             while (!this.IsGameOver) {
-                myNumRounds++;
+                myRoundNumber++;
                 Round r = new Round(this);
-                myPlayers.ForEach(p => p.Round = r);
+                myPlayers.ForEach(p => p.RoundStart(r));
                 
                 r.Play();
                 AddPoints(r.Points);
@@ -147,11 +155,11 @@ namespace HeartsGame {
         }
 
         private void AddPoints(int[] points) {
-            myScores = myRuleSet.AddPoints(myScores, points, myNumRounds);
+            myScores = myRuleSet.AddPoints(myScores, points, myRoundNumber);
         }
 
         private bool IsGameOver {
-            get { return myRuleSet.IsGameOver(myScores, myNumRounds); }
+            get { return myRuleSet.IsGameOver(myScores, myRoundNumber); }
         }
 
         public void RequestShutdown(int playerID) {

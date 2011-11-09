@@ -38,7 +38,7 @@ namespace RandomPlayer {
         }
 
         public Card GetCard(ITrick trick) {
-            return (Card)HC.Hand.First();
+            return (Card)HC.Hand.Where(c => HC.IsLegalCard(c)).First();
         }
     }
 }

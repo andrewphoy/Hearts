@@ -5,6 +5,6 @@ using System.Text;
 
 namespace HeartsInterfaces {
     public interface IHeartsPlayerData {
-        string PlayerName { get; set; }
+        string PlayerName { get; }
     }
 }

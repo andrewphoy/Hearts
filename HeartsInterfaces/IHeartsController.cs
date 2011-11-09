@@ -9,6 +9,8 @@ namespace HeartsInterfaces {
         // metadata
         int PlayerID { get; }
         Hand Hand { get; }
+        int NumberPlayers { get; }
+        string[] PlayerNames { get; }
         int Score { get; }
         int[] Scores { get; }
         IRuleSet RuleSet { get; }

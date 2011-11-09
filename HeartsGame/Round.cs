@@ -30,6 +30,8 @@ namespace HeartsGame {
 
         internal List<PlayerController> PlayerControllers { get { return myGame.PlayerControllers; } }
 
+        internal IRuleSet RuleSet { get { return myGame.RuleSet; } }
+
         public int NumberPlayers { get { return myGame.NumberPlayers; } }
 
         internal int[] Points {

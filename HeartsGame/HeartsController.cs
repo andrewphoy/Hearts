@@ -11,6 +11,8 @@ namespace HeartsGame {
         #region Metadata
         public int PlayerID { get; internal set; }
         public Cards.Hand Hand { get; internal set; }
+        public int NumberPlayers { get; internal set; }
+        public string[] PlayerNames { get; internal set; }
         public int Score { get; internal set; }
         public int[] Scores { get; internal set; }
         public IRuleSet RuleSet { get; internal set; }
@@ -25,9 +27,9 @@ namespace HeartsGame {
         public ITrick Trick { get; internal set; }
         public bool MyTurn { get; internal set; }
 
-        private LegalCardDelegate myLegalCardDelegate;
-        private LegalCardVerboseDelegate myLegalCardVerboseDelegate;
-        private WillTakeTrickDelegate myWillTakeTrickDelegate;
+        internal LegalCardDelegate LegalCardDelegate { private get; set; }
+        internal LegalCardVerboseDelegate LegalCardVerboseDelegate { private get; set; }
+        internal WillTakeTrickDelegate WillTakeTrickDelegate { private get; set; }
 
         public bool IsLegalCard(Card card) {
             return LegalCardDelegate(card);
@@ -41,7 +43,6 @@ namespace HeartsGame {
             return WillTakeTrickDelegate(card);
         }
         #endregion
-
 
     }
 }
